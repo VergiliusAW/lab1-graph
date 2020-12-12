@@ -1,0 +1,34 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 15px;
+  background-color: white;
+  max-width: 381px;
+}
+
+#drag-file {
+  text-align: center;
+  width:375px;
+  height:375px;
+  border: 3px dashed #eaeaea;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.cpanel {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.row input {
+  margin-left: auto;
+  
+}

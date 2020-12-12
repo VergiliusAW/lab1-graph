@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello World!</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <h1>Next-level Photoshop</h1>
+        <div id="drag-file">
+            <p id="p">Drag your files here</p>
+        </div>
+        <div class="cpanel">
+            <div class="row">
+                <span>Цветовой тон:</span>
+                <input step="0.02" />
+            </div>
+            <input type="range" min="0" max="360" value="50%" />
+            <div class="row">
+                <span>Насыщенность:</span>
+                <input step="0.02" />
+            </div>
+            <input type="range" min="0" max="100" value="50%" />
+            <div class="row">
+                <span>Яркость:</span>
+                <input step="0.02" />
+            </div>
+            <input type="range" min="0" max="100" value="50%" />
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
