@@ -27,8 +27,8 @@ holder.ondrop = (e) => {
             var img = document.createElement("img");
             img.id = "image";
             img.src = f.path;
-            img.style.maxWidth = "375px"
-            img.style.maxHeight = "375px"
+            img.style.maxWidth = "375px";
+            img.style.maxHeight = "375px";
             picture.appendChild(img);
             holder.appendChild(picture);
         } catch {
@@ -39,3 +39,18 @@ holder.ondrop = (e) => {
 
     return false;
 };
+
+const hueSlider = document.getElementById("hue");
+const hueN = document.getElementById("hue-n");
+hueN.value = 0
+
+hueSlider.oninput = () => {
+    var val = hueSlider.value;
+    hueN.value = val;
+    hueHandler(val)
+};
+
+function hueHandler(val) {
+    var img = document.getElementById("image");
+    // img
+}

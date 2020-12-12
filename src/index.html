@@ -13,19 +13,26 @@
         <div class="cpanel">
             <div class="row">
                 <span>Цветовой тон:</span>
-                <input step="0.02" />
+                <input id="hue-n"/>
             </div>
-            <input type="range" min="0" max="360" value="50%" />
+            <input
+                id="hue"
+                type="range"
+                min="0"
+                max="360"
+                value="50%"
+                step="0.02"
+            />
             <div class="row">
                 <span>Насыщенность:</span>
-                <input step="0.02" />
+                <input />
             </div>
-            <input type="range" min="0" max="100" value="50%" />
+            <input type="range" min="0" max="100" value="50%" step="0.02" />
             <div class="row">
                 <span>Яркость:</span>
-                <input step="0.02" />
+                <input />
             </div>
-            <input type="range" min="0" max="100" value="50%" />
+            <input type="range" min="0" max="100" value="50%" step="0.02" />
         </div>
         <script src="script.js"></script>
     </body>
