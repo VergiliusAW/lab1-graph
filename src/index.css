@@ -16,6 +16,10 @@ body {
 
 }
 
+#hc {
+  display: none;
+}
+
 .cpanel {
   margin-top: 1rem;
   display: flex;
@@ -30,5 +34,5 @@ body {
 
 .row input {
   margin-left: auto;
-  
+
 }
