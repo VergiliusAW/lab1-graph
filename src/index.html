@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Hello World!</title>
-        <link rel="stylesheet" href="index.css" />
-    </head>
-    <body>
-        <h1>Next-level Photoshop</h1>
-        <div id="drag-file">
-            <p id="p">Drag your files here</p>
-        </div>
-        <div class="cpanel">
-            <div class="row">
-                <span>Цветовой тон:</span>
-                <input id="hue-n"/>
-            </div>
-            <input
-                id="hue"
-                type="range"
-                min="0"
-                max="360"
-                value="50%"
-                step="0.02"
-            />
-            <div class="row">
-                <span>Насыщенность:</span>
-                <input />
-            </div>
-            <input type="range" min="0" max="100" value="50%" step="0.02" />
-            <div class="row">
-                <span>Яркость:</span>
-                <input />
-            </div>
-            <input type="range" min="0" max="100" value="50%" step="0.02" />
-            <button id="button">Save</button>
-        </div>
-        <canvas id="hc"></canvas>
-        <script src="script.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Next-level Photoshop</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<h1>Next-level Photoshop</h1>
+<div id="drag-file">
+    <p id="p">Drag your files here</p>
+</div>
+<div class="cpanel">
+    <div class="row">
+        <span>Цветовой тон:</span>
+        <input id="hue-n" type="number" disabled/>
+    </div>
+    <input
+            id="hue"
+            type="range"
+            min="0"
+            max="360"
+            value="50%"
+            step="1"
+    />
+    <div class="row">
+        <span>Насыщенность:</span>
+        <input id="saturation-n" type="number" disabled/>
+    </div>
+    <input id="saturation" type="range" min="0" max="200" value="50%" step="1"/>
+    <div class="row">
+        <span>Яркость:</span>
+        <input id="brightness-n" type="number" disabled/>
+    </div>
+    <input id="brightness" type="range" min="0" max="100" value="50%" step="1"/>
+    <button id="button">Save</button>
+</div>
+<canvas id="hc"></canvas>
+<script src="FileServer.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
